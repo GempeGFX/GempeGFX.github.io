@@ -1,0 +1,185 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(fondo.png);
+    color: #333;
+}
+
+header {
+  background-image: url('recuadro.png');
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+.header-content {
+  text-align: center;
+  animation: zoomIn 1000ms ease; /* Aplica la animación 'zoomIn' al contenedor con duración de 1 segundo y función de temporización 'ease' */
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0); /* Comienza sin escala (invisible) */
+  }
+  to {
+    transform: scale(1); /* Termina con escala completa (normal) */
+  }
+}
+
+.logo {
+  max-width: 8%;
+  height: auto;
+  margin: 0px 0; /* Ajusta el margen según sea necesario */
+}
+
+
+.link-may a{
+  border-bottom: transparent; 
+}
+
+
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #324066;
+}
+
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #324068;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid #324068; /* Línea de fondo presente todo el tiempo */
+    transition: border-bottom-color 0.3s ease;
+  }
+  
+  a:hover,
+  a:focus {
+    border-bottom-color: #ff0000; /* Cambia el color de la línea de fondo al pasar el ratón o al hacer clic en el enlace */
+  }
+  
+/* Añade al final de tu archivo styles.css */
+
+.cuadricula {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .fila {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .proyecto {
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: 45%; /* Ajusta el ancho según tus preferencias */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .proyecto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: opacity 0.5s ease;
+  }
+  
+  .proyecto:hover {
+    border-color: #324068;
+  }
+  
+  .proyecto:hover img {
+    opacity: 0.8;
+  }
+  
+  
+  
+  
+  
+  /*apartir de aca no se toca, ojito
+/* Añade al final de tu archivo styles.css */
+
+/* Definir una animación llamada 'fadeIn' */
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* Comienza con opacidad 0 (invisible) */
+      transform: translateY(20px); /* Comienza ligeramente desplazado hacia arriba */
+    }
+    to {
+      opacity: 1; /* Termina con opacidad 1 (totalmente visible) */
+      transform: translateY(0); /* Termina en su posición original */
+    }
+  }
+  
+  /* Aplica la animación a las imágenes dentro de la clase 'proyecto' */
+  .proyecto img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  
+    /* Añade la animación 'fadeIn' con duración de 1 segundo y efecto de desvanecimiento */
+    animation: fadeIn 1s ease;
+  }
+  
+  /* Agrega una transición de bordes para suavizar cambios de color al pasar el ratón */
+  .proyecto img:hover {
+    border-color: #324068;
+    transition: border-color 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      background-image: none; /* Elimina la imagen de fondo */
+      background-color: #324068; /* Agrega el color sólido deseado */
+      padding: 50px 0; /* Ajusta este valor según tus necesidades en dispositivos móviles */
+    }
+
+    @media (max-width: 768px) {
+
+      p {
+        font-size: 13px; /* Ajusta el tamaño de fuente según tus necesidades */
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .logo {
+          max-width: 50%;
+      }
+  }
+
+    
